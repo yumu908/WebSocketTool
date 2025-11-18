@@ -50,7 +50,8 @@ namespace WebSocketTool
         private void connect_Click(object sender, EventArgs e)
         {
             connect.Enabled = false;
-            string allPath = Settings.Default.path + path.Text;
+            // string allPath = Settings.Default.path + path.Text;
+            string allPath = path.Text;
             try
             {
                 ws = new WebSocket(allPath);
